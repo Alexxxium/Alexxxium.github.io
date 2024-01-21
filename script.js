@@ -9,12 +9,12 @@ const saleProds = [
     { name: "Кошак целебный", description: "Мой кот", img: "https://avatars.githubusercontent.com/u/120672371?v=4" },
 ]
 const svoProds = [
-    { name: "Маленькая аптечка", description: "От пулевых повреждений", img: "https://static.wikia.nocookie.net/pubg-mobile/images/3/31/%D0%9C%D0%B0%D0%BB%D0%B0%D1%8F_%D0%B0%D0%BF%D1%82%D0%B5%D1%87%D0%BA%D0%B0.jpg/revision/latest?cb=20181028095424&path-prefix=ru" },
-    { name: "Большая аптечка", description: "От серьезных пулевых повреждений", img: "https://static.wikia.nocookie.net/pubg-mobile/images/7/72/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F_%D0%B0%D0%BF%D1%82%D0%B5%D1%87%D0%BA%D0%B0.jpg/revision/latest/scale-to-width-down/314?cb=20181028094221&path-prefix=ru" },
-    { name: "Бинты", description: "От кровотечения", img: "https://static.wikia.nocookie.net/pubg/images/d/d0/360fx360f4.png/revision/latest?cb=20170416091241&path-prefix=ru" },
-    { name: "Обезболевающее", description: "Вкидывать по пол банки и выбросить", img: "https://static.wikia.nocookie.net/pubg/images/8/8b/360fx360f3.png/revision/latest?cb=20170416091230&path-prefix=ru" },
-    { name: "Шприц с адреналином", description: "Много весит, альтернатива 3 энергетикам", img: "https://static.wikia.nocookie.net/pubg/images/a/ab/360fx360f22.png/revision/latest?cb=20170413014429&path-prefix=ru" },
-    { name: "Энергетик", description: "Выпивать залпом", img: "https://static.wikia.nocookie.net/pubg/images/5/5c/360fx360f7.png/revision/latest?cb=20170416091308&path-prefix=ru" },
+    { name: "Маленькая аптечка", description: "От пулевых повреждений", img: "https://goroogomel.by/wp-content/uploads/2021/07/8db6a5e09ebeb8103845b7ba5e762213.png" },
+    { name: "Большая аптечка", description: "От серьезных пулевых повреждений", img: "https://static.wikia.nocookie.net/pubg/images/5/55/360fx360f6.png/revision/latest?cb=20170416091258&path-prefix=ru" },
+    { name: "Бинты", description: "От кровотечения", img: "https://static.wikia.nocookie.net/battlegrounds_gamepedia_en/images/2/29/Bandage_Infobox.png/revision/latest?cb=20170729205850" },
+    { name: "Обезболевающее", description: "Вкидывать по пол банки и выбросить", img: "https://pubgclub.ru/wp-content/uploads/2019/11/https-cdn131-picsart-com-281735006017211-png.png" },
+    { name: "Шприц с адреналином", description: "Много весит, альтернатива 3 энергетикам", img: "https://pubgclub.ru/wp-content/uploads/2019/11/https-www-dictio-id-uploads-db3342-original-3x-3.jpeg" },
+    { name: "Энергетик", description: "Выпивать залпом", img: "https://goroogomel.by/wp-content/uploads/2021/07/7eaec60df41f84a6de124cb8735ed5f7.png" },
 ]
 
 function reload(tag, container) {
