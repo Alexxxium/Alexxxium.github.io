@@ -35,6 +35,7 @@ function reload(tag, container) {
         prdElem.appendChild(descrElem);
         tag.appendChild(prdElem);
     })
+    console.log('reloaded')
 }
 
 function reloadAll() {
