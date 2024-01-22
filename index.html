@@ -8,9 +8,9 @@
 </head>
 <body>
     <header>
-        <h1>Сасная Аптека</h1>
+        <h1>АПТЕКА</h1>
     </header>
-    <nav>
+    <nav class="navbar">
         <h2>Путеводный камень</h2>
         <ul>
             <li><a href="#ref1">Актуальные товары</a></li>
@@ -21,25 +21,25 @@
     <main>
         <div class="section-block" id="ref1">
             <h3>Актуальные товары</h3>
-            <div class="alchemy-block" id="def">
-                
+            <button onclick="addActualProduct()">Добавить товар</button>
+            <div class="alchemy-block" id="def">  
             </div>
         </div>
         <div class="section-block" id="ref2">
             <h3>По скидке</h3>
+            <button onclick="addSaleProduct()">Добавить товар</button>
             <div class="alchemy-block" id="sale">
-
             </div>
         </div>
         <div class="section-block" id="ref3">
             <h3>На СВО</h3>
+            <button onclick="addSVOProduct()">Добавить товар</button>
             <div class="alchemy-block" id="svo">
-
             </div>
         </div>
     </main>
     <footer>
-        <p>&copy; 2023 Сасная Аптека. Все права защищены.</p>
+        <p>&copy; 2023 Аптека. Все права не защищены.</p>
     </footer>
     <script src="script.js"></script>
 </body>

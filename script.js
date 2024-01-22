@@ -19,29 +19,45 @@ const svoProds = [
 
 function reload(tag, container) {
     tag.innerHTML = '';
-
     container.forEach(function (product) {
-        let prdElem = document.createElement('div');
-        let imgElem = document.createElement('img');
-        let nameElem = document.createElement('h3');
-        let descrElem = document.createElement('p');
-        
-        imgElem.src = product.img;
-        nameElem.textContent = product.name;
-        descrElem.textContent = product.description;
-
-        prdElem.appendChild(imgElem);
-        prdElem.appendChild(nameElem);
-        prdElem.appendChild(descrElem);
-        tag.appendChild(prdElem);
+        tag.appendChild(getItem(product));
     })
-    console.log('reloaded')
 }
 
 function reloadAll() {
     reload(document.getElementById('def'), products);
     reload(document.getElementById('sale'), saleProds);
     reload(document.getElementById('svo'), svoProds);
+}
+
+function addProduct(tag, model, item) {
+    model.push(item)
+    reload(tag, model);
+}
+function getProduct() {
+    return { name: prompt("Имя товара: "), description: prompt("Описание товара: "), img: prompt("URL картинки: ") };
+}
+function getItem(itemObj) {
+    let prdElem = document.createElement('div');
+    let imgElem = document.createElement('img');
+    let nameElem = document.createElement('h3');
+    let descrElem = document.createElement('p');
+    imgElem.src = itemObj.img;
+    nameElem.textContent = itemObj.name;
+    descrElem.textContent = itemObj.description;
+    prdElem.appendChild(imgElem);
+    prdElem.appendChild(nameElem);
+    prdElem.appendChild(descrElem);
+    return prdElem;
+}
+function addActualProduct() {
+    addProduct(document.getElementById('def'), products, getProduct());
+}
+function addSaleProduct() {
+    addProduct(document.getElementById('sale'), saleProds, getProduct());
+}
+function addSVOProduct() {
+    addProduct(document.getElementById('svo'), svoProds, getProduct());
 }
 
 reloadAll();
